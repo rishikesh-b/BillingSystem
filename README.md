@@ -19,7 +19,7 @@ This is a simple Invoice Generating System written in C
 
 ## Contributors
 
--[Vedant Rai](https://github.com/Vedant-rai)
+- [Vedant Rai](https://github.com/Vedant-rai)
 
 ## Note
 - Try Running The Code On `Vs Code Editor`
