@@ -14,8 +14,9 @@ This is a simple Invoice Generating System written in C
 
 - :white_check_mark: Options to `Create` `Account` and `Login`
 - :white_check_mark: Option to `Generate` Invoice
+- :white_check_mark: Option to `Search` Invoice
 - :white_check_mark: Option to `Show` all Previous Invoices
-- :white_check_mark: option to `Delete` A Invoice
+- :white_check_mark: option to `Delete` Invoice
 
 ## Contributors
 
