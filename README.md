@@ -27,4 +27,4 @@ This is a simple Invoice Generating System written in C
 - If you encounter any error while running the code  just Copy the Code and 
   run on online compiler [Here](https://www.onlinegdb.com/online_c_compiler).
 
-- If you can also  use `System("clear")` instead of  `system("cls")` to Clear Previous Output in case of errors.
+- You can also  use `System("clear")` instead of  `system("cls")` to Clear Previous Output in case of errors.
