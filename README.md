@@ -4,7 +4,7 @@ This is a simple Invoice Generating System written in C
 
 ## Steps To Run The  Program
 
-### To build this project on Windows OS you need to follow the following steps 
+### To build and run this project on Windows OS you need to follow the following steps 
 
 - First Download Mingw from [here](https://www.mingw-w64.org/)
 - Then Follow the next Steps [here](https://www.geeksforgeeks.org/installing-mingw-tools-for-c-c-and-changing-environment-variable/)
@@ -12,7 +12,7 @@ This is a simple Invoice Generating System written in C
 
 ## Included Features
 
-- :white_check_mark: Options to `Create` `Account` and `Login`
+- :white_check_mark: Option to `Create Account` and `Login` for restricted user's invoice access.
 - :white_check_mark: Option to `Generate` Invoice
 - :white_check_mark: Option to `Search` Invoice
 - :white_check_mark: Option to `Show` all Previous Invoices
