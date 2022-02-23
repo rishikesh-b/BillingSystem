@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<unistd.h>
+#include<conio.h>
 
 void generatebillheading(char name[50],char date[30],char time[30]) //two arguments for name and date
 {
@@ -96,6 +97,8 @@ int main()
 
         fgetc(stdin);
         system("cls");
+        char passwd[10];
+        int p=0; char ch;
         printf("\n\nEnter your name:\t ");
         fgets(detail.name,30,stdin);
         detail.name[strlen(detail.name)-1]=0;
@@ -103,10 +106,57 @@ int main()
         fgets(detail.username,30,stdin);
         detail.username[strlen(detail.username)-1]=0;
         printf("\n\nEnter your password:\t");
-        fgets(detail.password,30,stdin);
-        detail.password[strlen(detail.password)-1]=0;
+         while(1)
+        {
+          ch=getch();
+          if(ch==13)
+          {
+              break;
+          }
+          else if(ch==8)
+          {
+              if(p>0)
+              {
+                  p--;
+                  passwd[p]='\0';
+                  printf("\b \b");
+              }
+          }
+          else
+          {
+              passwd[p]=ch;
+              p++;
+              printf("*");
+          }
+        }
+        passwd[p]='\0';
         printf("\n\n Confirm password:\t");
-        scanf("%s",cpsword);
+            p=0;
+            while(1)
+        {
+          ch=getch();
+          if(ch==13)
+          {
+              break;
+          }
+          else if(ch==8)
+          {
+              if(p>0)
+              {
+                  p--;
+                  cpsword[p]='\0';
+                  printf("\b \b");
+              }
+          }
+          else
+          {
+              cpsword[p]=ch;
+              p++;
+              printf("*");
+          }
+        }
+        cpsword[p]='\0';
+        strcpy(detail.password,passwd);               
         if(strcmp(detail.password,cpsword)==0){
         printf("\n\n\tDo You want to save the details?[y/n]\t");
         scanf("%s",&Saveinfo);
@@ -135,8 +185,33 @@ int main()
         fgets(name1,30,stdin);
         name1[strlen(name1)-1]=0;
         printf("\n\nEnter Your Password:\t");
-        fgets(psword,30,stdin);
-        psword[strlen(psword)-1]=0;
+        // fgets(psword,30,stdin);
+       // psword[strlen(psword)-1]=0;
+       p=0;
+         while(1)
+        {
+          ch=getch();
+          if(ch==13)
+          {
+              break;
+          }
+          else if(ch==8)
+          {
+              if(p>0)
+              {
+                  p--;
+                  psword[p]='\0';
+                  printf("\b \b");
+              }
+          }
+          else
+          {
+              psword[p]=ch;
+              p++;
+              printf("*");
+          }
+        }
+        psword[p]='\0';
 
             lg =fopen("logindetails.dat","rb");
             while(fread(&detmatch,sizeof(struct details),1,lg))
