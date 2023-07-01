@@ -10,7 +10,8 @@ void generatebillheading(char name[50],char date[30],char time[30]) //three argu
     // \t is used for spacin
     
     printf("        .-----------------------.");
-    printf("\n\t|                       |\n\t|     ABC RESTAURANT    |");    // name of the restaurant
+    printf("\n\t|                       |\n\t|     ABC RESTAURANT    |");  
+    // name of the restaurant
     printf("\n\t|                       |");
     printf("\n        '-----------------------'\n"); 
     
