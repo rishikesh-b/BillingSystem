@@ -7,7 +7,7 @@
 void generatebillheading(char name[50],char date[30],char time[30]) //three arguments for name, date and time
 {
     printf("\n\n");
-    // \t is used for spacing(4 spaces)
+    // \t is used for spacing
     printf("        .-----------------------.");
     printf("\n\t|                       |\n\t|     ABC RESTAURANT    |");    // name of the restaurant
     printf("\n\t|                       |");
